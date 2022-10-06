@@ -1,0 +1,21 @@
+$title: #363838;
+$default: #5A5A5A;
+
+
+%medium-font{
+  font-family: 'TT Norms Medium', sans-serif;
+  font-weight: 500;
+}
+
+%title-font{
+  font-family: 'Forum', cursive;
+  font-weight: 400;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function max($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+
