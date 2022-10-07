@@ -46,7 +46,7 @@ const paths = {
 
 // очистка каталога 
 function clean() {
-    return del(['dist/*', '!dist/img'])
+    return del(['dist/*', '!dist/img', '!dist/fonts'])
 }
 
 // gulp.task('minify', () => {
@@ -91,7 +91,7 @@ function styles(){
         .pipe(browsersync.stream())
 }
 
-// задача для обработки скриптов
+// скрипты
 function scripts(){
     return gulp.src(paths.scripts.src)
     .pipe(sourcemaps.init())

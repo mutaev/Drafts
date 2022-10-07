@@ -38,3 +38,33 @@ body{
 	font-size: 50px;
 	line-height: 60px;
 }
+
+.bredcrumbs {
+	margin-bottom: 80px;
+	display: flex;
+  position: relative;
+  z-index: 999;
+  &__list {
+		display: flex;
+  }
+  &__item::after {
+    content: '>';
+		font-family: 'TT Norms', sans-serif;
+		font-weight: 400;
+    margin-right: 39px;
+    margin-left: 39px;
+		color: #938282;
+		font-size: 13px;
+  }
+  &__item:last-child::after{
+    display: none;
+  }
+  &__item{
+		font-size: 13px;
+    color: #938282;
+  }
+  &__link {
+    font-size: 13px;
+    color: #938282;
+  }
+}

@@ -6,17 +6,25 @@
 
 //header
 .header {
-  padding-bottom: 48px;
-  background-image: url(../img/header-bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
+  &__bg{
+    padding-bottom: 48px;
+    background-image: url(../img/header-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
+  &__text-color{
+    color: #000;
+  }
   &__top {
     padding: 49px 10px 26px;
     font-size: 15px;
     line-height: 19px;
     margin-bottom: 27px;
     border-bottom: 1px solid rgba(249, 249, 249, 0.14);
+  }
+  &__top--color {
+    border-bottom: 1px solid rgba(145, 145, 145, 0.14);
   }
   &__items {
     display: flex;
@@ -39,6 +47,7 @@
     align-items: center;
     gap: 18px;
   }
+  
   &__item-text {
     max-width: 236px;
   }
@@ -46,9 +55,15 @@
     color: #fff;
     font-family: 'TT Norms Medium'
   }
+  &__item-email--color {
+    color: #000;
+  }
   &__item-phone {
     color: #fff;
     font-size: 23px;
+  }
+  &__item-phone--color {
+    color: #000;
   }
   &__item-date {
     font-size: 14px;
@@ -149,6 +164,7 @@
 }
 
 .menu {
+  
   margin-bottom: 60px;
   &__list {
     display: flex;
@@ -161,6 +177,36 @@
     font-size: 17px;
     @extend %medium-font;
   }
+  &__list-link--color {
+    color: #000;
+  }
+  &__list-link--func{
+    position: relative;
+    &::after{
+      content: '';
+      background-image: url(../img/menu-ar.svg);
+      position: absolute;
+      top: 8px;
+      width: 9px;
+      height: 4px;
+      right: -16px;
+    }
+  }
+  &__list-link--black{
+    position: relative;
+    &::after{
+      content: '';
+      background-image: url(../img/menu-ar1.svg);
+      position: absolute;
+      top: 8px;
+      width: 9px;
+      height: 4px;
+      right: -16px;
+    }
+  }
+}
+.menu--marg{
+  margin-bottom: 38px;
 }
 //header
 
@@ -259,6 +305,7 @@
 
 //services
 .services {
+  margin-bottom: 130px;
   &__title {
     max-width: 582px;
     margin-bottom: 46px;
@@ -276,6 +323,12 @@
   &__item {
     position: relative;
     border-radius: 25px;
+    width: 335px;
+    height: 372px;
+    transition: transform 0.2s;
+  }
+  &__item:hover {
+    transform: scale(1.02);
   }
   &__icon {
     display: inline;
@@ -296,12 +349,296 @@
 }
 //services
 
+//news
+.news {
+  margin-bottom: 115px;
+  &__title {
+    max-width: 900px;
+    margin-bottom: 46px;
+    line-height: 65px;
+    span{
+      color: #6496AE;
+    }
+  }
+  &__title-2{
+    font-size: 45px;
+    line-height: 58px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 55px;
+  }
+  &__slider {
+
+  }
+  &__slider-link {
+    position: relative;
+    margin-right: 1px;
+  }
+  &__slider-img {}
+  &__slider-text {
+    @extend %medium-font;
+    position: absolute;
+    bottom: 37px;
+    left: 20px;
+    color: #fff;
+    max-width: 311px;
+    font-size: 25px;
+    line-height: 32px;
+  }
+  &__slider-date {
+    @extend %medium-font;
+    color: #fff;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    padding: 12px 19px;
+    background: radial-gradient(54.12% 54.12% at 50% 50%, #6496AE 0%, #6496AE 0.01%, #97BDCF 100%);
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.slick-dots{
+  margin-top: 20px;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	li{
+		margin: 0 5px;
+	}
+	button{
+		background-color: #EBEBEB;
+		border: none;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		padding: 0;
+		font-size: 0;
+	}
+	li.slick-active{
+		button{
+			background: radial-gradient(54.12% 54.12% at 50% 50%, #6496AE 0%, #6496AE 0.01%, #97BDCF 100%);
+		}
+	}
+}
+
+//news 
+
+//contact
+.contacts {
+  position: relative;
+  &__inner {
+    padding: 40px 30px;
+    display: flex;
+    position: absolute;
+    top: 75px;
+    background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(21px);
+    border-radius: 15px;
+  }
+  &__block:first-child {
+    margin-right: 79px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      top: -41px;
+      bottom: 0;
+      right: -41px;
+      width: 1px;
+      height: 603px;
+      background-color: #fff;
+    }
+  }
+  &__title {
+    @extend %title-font;
+    font-size: 31px;
+    line-height: 37px;
+    max-width: 313px;
+    margin-bottom: 25px;
+    span{
+      color: #6496AE;
+    }
+  }
+  &__title--width{
+    max-width: 261px;
+  }
+  &__text {
+    color:#808080;
+    font-size: 17px;
+    line-height: 22px;
+    max-width: 325px;
+    margin-bottom: 39px;
+  }
+  &__list {}
+  &__list-item {
+    max-width: 350px;
+    padding-left: 37px;
+    position: relative;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 15px;
+    &::after{
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 0;
+      width: 22px;
+      height: 16px;
+      background-image: url(../img/check-ic.svg);
+    }
+  }
+  &__list-item:last-child{
+    margin-bottom: 28px;
+
+  }
+  &__form {}
+  &__form-num {
+    background: #F3F3F3;
+    border-radius: 15px;
+    border: none;
+    padding: 29px 37px;
+    margin-bottom: 20px;
+    font-family: 'TT Norms', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    color: #8D8D8D;
+    min-width: 344px;
+    display: block;
+  }
+  &__form-num::placeholder{
+    font-family: 'TT Norms', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #8D8D8D;
+  }
+  &__form-btn {
+    @extend %medium-font;
+    color: #fff;
+    border: none;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    width: 344px;
+    height: 79px;
+    background: radial-gradient(54.12% 54.12% at 50% 50%, #6496AE 0%, #6496AE 0.01%, #97BDCF 100%);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  &__phone,
+  &__adress {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  &__phone{
+    margin-bottom: 76px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      top: 79px;
+      bottom: 0;
+      right: -30px;
+      width: 341px;
+      height: 1px;
+      background-color: #fff;
+    }
+  }
+  &__phone-box {}
+  &__phone-date {
+    font-size: 14px;
+    line-height: 12px;
+    color: #959595;
+  }
+  &__img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &__phone-num {
+    font-size: 23px;
+    color: #000;
+    line-height: 29px;
+  }
+  &__email-title {
+    font-family: 'TT Norms', sans-serif;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 37px;
+    margin-bottom: 25px;
+  }
+  &__email {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  &__email-box {}
+  &__email-text {
+    font-size: 15px;
+    line-height: 19px;
+  }
+  &__email-name {
+    color: #000;
+    font-family: 'TT Norms Medium';
+    font-size: 15px;
+    line-height: 19px;
+  }
+  &__adress{
+    margin-bottom: 25px;
+  }
+  &__adress-text {
+    max-width: 236px;
+    font-size: 15px;
+    line-height: 19px;
+  }
+}
+//contact
 
 
+// page article ==============================================================
 
+//article
+.article {
+  margin-bottom: 138px;
+  &__title {
+    @extend %title-font;
+    margin: 0 auto;
+    font-size: 45px;
+    line-height: 58px;
+    text-align: center;
+    max-width: 1178px;
+    margin-bottom: 50px;
+  }
+  &__date {
+    @extend %medium-font;
+    color: #fff;
+    padding: 12px 19px;
+    background: radial-gradient(54.12% 54.12% at 50% 50%, #6496AE 0%, #6496AE 0.01%, #97BDCF 100%);
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 18px;
+    position: relative;
+    bottom: 5px;
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 50px;
+  }
+  &__block {}
+  &__text {
+    max-width: 606px;
+  }
+}
+//article
 
-
-
+// page article ==============================================================
 
 
 
@@ -356,7 +693,9 @@
   }
   &__email-name {
     color: #000;
-    font-family: 'TT Norms Medium'
+    font-family: 'TT Norms Medium';
+    font-size: 15px;
+    line-height: 19px;
   }
   &__menu {
     padding-top: 5px;
