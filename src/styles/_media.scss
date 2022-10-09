@@ -40,7 +40,7 @@
     display: none;
   }
   .news__slider-img{
-    max-width: 95%;
+    max-width: 100%;
   }
   .footer__menu{
     margin-right: 0;
@@ -55,9 +55,12 @@
   .footer__list-block:last-child{
     display: none;
   }
-  // .header__inner{
-    //   display: flex;
-    // }
+  .slick-track{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 1156px){
@@ -171,9 +174,6 @@
   }
 }
   
-  
-  
-  
 @media (max-width: 1010px) {
   .benefits__items{
     grid-template-columns: repeat(2,1fr);
@@ -248,11 +248,25 @@
     font-size: 39px;
 
   }
+  .attendance__slider-item{
+    box-shadow: 0 0 10px rgb(72 66 66 / 21%);
+  }
+  .attendance__slider-text {
+    max-width: 468px;
+  }
 }
 
+@media (min-width: 560px) and (max-width: 860px) {
+  .services__items{
+    gap: 30px 5px;
+  }
+  .benefits__items{
+    justify-items: center;
+  }
+}
 
   
-@media (max-width: 796px){
+@media (max-width: 550px){
   .container{
     padding-right: 15px;
     padding-left: 15px;
@@ -262,6 +276,7 @@
     align-items: center;
     justify-content: center;
     padding: 0;
+    overflow: hidden;
   }
   .contacts__block:first-child{
     margin-right: 0;
@@ -286,6 +301,7 @@
   }
   .benefits__items {
     grid-template-columns: repeat(1,1fr);
+    justify-items: center;
   }
   .services__items {
     grid-template-columns: repeat(1,1fr);
@@ -395,14 +411,15 @@
   .contacts__form-btn,
   .contacts__list,
   .contacts__text{
-    max-width: 296px;
+    max-width: 270px;
   }
   .contacts__form-num{
     margin: 0 auto 20px;
   }
   .contacts__form-btn{
-    margin: 0 auto;
+    margin: 0 auto 35px;
     display: block;
+    
   }
   .news__title-2{
     margin-bottom: 15px;
@@ -417,13 +434,26 @@
   .article__title{
     line-height: 49px;
   }
+  .benefits__item{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .benefits__item{
+    text-align: center;
+  }
 }
 
   
 @media (max-width: 500px) {
   .news__slider-text {
     font-size: 18px;
-}
+  }
+  .contacts__title{
+    max-width: 255px;
+  }
 }
   
 

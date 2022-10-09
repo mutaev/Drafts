@@ -105,7 +105,8 @@
     color: #fff;
     margin-right: 38px;
     cursor: pointer;
-    transition: background 0.8s ease;
+    transition:  0.8s ease;
+    border: none;
     &:hover{
       background: radial-gradient(54.12% 54.12% at 50% 50%, #3e5f6d 0%, #6496AE 0.01%, #236a8b 100%);
     }
@@ -490,7 +491,6 @@
     margin-bottom: 28px;
 
   }
-  &__form {}
   &__form-num {
     background: #F3F3F3;
     border-radius: 15px;
@@ -525,6 +525,9 @@
     border-radius: 10px;
     margin-bottom: 20px;
     cursor: pointer;
+    &:hover{
+      background: radial-gradient(54.12% 54.12% at 50% 50%, #3e5f6d 0%, #6496AE 0.01%, #236a8b 100%);
+    }
   }
   &__phone,
   &__adress {
@@ -546,7 +549,6 @@
       background-color: #fff;
     }
   }
-  &__phone-box {}
   &__phone-date {
     font-size: 14px;
     line-height: 12px;
@@ -574,7 +576,6 @@
     gap: 15px;
     align-items: center;
   }
-  &__email-box {}
   &__email-text {
     font-size: 15px;
     line-height: 19px;

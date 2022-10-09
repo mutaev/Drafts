@@ -18,7 +18,7 @@
           <div class="header__top">
             <div class="header__items">
               <div class="header__item header__logo">
-                <a class="logo" href="#"><img src="img/logo.svg" alt="logo"></a> 
+                <a class="logo" href="index.html"><img src="img/logo.svg" alt="logo"></a> 
               </div>
               <div class="header__item">
                 <img src="img/email-ic.svg " alt="email icon">
@@ -47,50 +47,50 @@
           <nav class="header__nav">
             <ul class="header__menu">
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Главная</a>
+                <a class="menu__list-link" href="index.html">Главная</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">О компании</a>
+                <a class="menu__list-link" href="#about">О компании</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Преимущества</a>
+                <a class="menu__list-link" href="#benefits">Преимущества</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link menu__list-link--func" href="#">Деятельность</a>
+                <a class="menu__list-link menu__list-link--func" href="#activity">Деятельность</a>
               </li>
               <li class="menu__list-item">
                 <a class="menu__list-link" href="#">Команда</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">новости</a>
+                <a class="menu__list-link" href="news.html">новости</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Контакты</a>
+                <a class="menu__list-link" href="#contacts">Контакты</a>
               </li>
             </ul>
           </nav>
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Главная</a>
+                <a class="menu__list-link" href="index.html">Главная</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">О компании</a>
+                <a class="menu__list-link" href="#about">О компании</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Преимущества</a>
+                <a class="menu__list-link" href="#benefits">Преимущества</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link menu__list-link--func" href="#">Деятельность</a>
+                <a class="menu__list-link menu__list-link--func" href="#activity">Деятельность</a>
               </li>
               <li class="menu__list-item">
                 <a class="menu__list-link" href="#">Команда</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">новости</a>
+                <a class="menu__list-link" href="news.html">новости</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Контакты</a>
+                <a class="menu__list-link" href="#contacts">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -98,10 +98,10 @@
 
         <div class="header__content">
           <div class="header__block">
-            <h1 class="header__title">Решайте свои юридические проблемы <br> с помощью <span>Московкой колегии адвокатов</span></h1>
+            <h1 class="header__title">Решайте свои юридические проблемы <br> с помощью <span>Московкой коллегии адвокатов</span></h1>
             <p class="header__text">Оставьте заявку и получите консультацию по вашей проблеме и предложения по её решению</p>
             <div class="header__box">
-              <button class="header__btn">Получить бесплатную консультацию от юриста</button>
+              <button class="header__btn" onclick="location.href='#contacts'">Получить бесплатную консультацию от юриста</button>
               <p class="header__box-text">Оставьте заявку и мы перезвоним вам
                 в течении 10 минут в рабочее время!</p>
             </div>
@@ -146,7 +146,7 @@
         <div class="container">
           <div class="about__inner">
             <div class="about__content">
-              <h2 class="about__title title-h2">Наша цель — <span>помочь решить вашу проблему юридическим способом</span></h2>
+              <h2 class="about__title title-h2" id="about">Наша цель — <span>помочь решить вашу проблему юридическим способом</span></h2>
               <div class="about__text-box">
                 <p class="about__text">
                   Специалисты коллегии представляют интересы своих клиентов, в арбитражных судах, судах общей юрисдикции и третейских судах.
@@ -164,7 +164,7 @@
 
       <section class="benefits">
         <div class="container">
-          <h2 class="benefits__title title-h2">Наши преимущество — <br><span>причины обратиться именно к нам</span></h2>
+          <h2 class="benefits__title title-h2" id="benefits">Наши преимущество — <br><span>причины обратиться именно к нам</span></h2>
           <div class="benefits__items">
             <div class="benefits__item">
               <img class="benefits__img" src="img/benefits-ic1.svg" alt="image">
@@ -214,7 +214,7 @@
 
       <section class="services">
         <div class="container">
-          <h2 class="services__title title-h2">Наши сферы<span> деятельности и услуги по ним</span></h2>
+          <h2 class="services__title title-h2" id="activity">Наши сферы<span> деятельности и услуги по ним</span></h2>
           <a class="services__items" href="#">
             <div class="services__item">
               <img class="services__img" src="img/services1.png" alt="image">
@@ -283,76 +283,6 @@
               <p class="news__slider-text">Изменения в семейном кодексе РФ от 22.09.2022</p>
               <span class="news__slider-date">22.09.2022</span>
             </a>
-            <a class="news__slider-link" href="#">
-              <img class="news__slider-img" src="img/news2.png" alt="image">
-              <p class="news__slider-text">Изменения в семейном кодексе РФ от 22.09.2022</p>
-              <span class="news__slider-date">22.09.2022</span>
-            </a>
-            <a class="news__slider-link" href="#">
-              <img class="news__slider-img" src="img/news3.png" alt="image">
-              <p class="news__slider-text">Изменения в семейном кодексе РФ от 22.09.2022</p>
-              <span class="news__slider-date">22.09.2022</span>
-            </a>
-            <a class="news__slider-link" href="#">
-              <img class="news__slider-img" src="img/news1.png" alt="image">
-              <p class="news__slider-text">Изменения в семейном кодексе РФ от 22.09.2022</p>
-              <span class="news__slider-date">22.09.2022</span>
-            </a>
-            <a class="news__slider-link" href="#">
-              <img class="news__slider-img" src="img/news2.png" alt="image">
-              <p class="news__slider-text">Изменения в семейном кодексе РФ от 22.09.2022</p>
-              <span class="news__slider-date">22.09.2022</span>
-            </a>
-            <a class="news__slider-link" href="#">
-              <img class="news__slider-img" src="img/news3.png" alt="image">
-              <p class="news__slider-text">Изменения в семейном кодексе РФ от 22.09.2022</p>
-              <span class="news__slider-date">22.09.2022</span>
-            </a>
-            <a class="news__slider-link" href="#">
-              <img class="news__slider-img" src="img/news1.png" alt="image">
-              <p class="news__slider-text">Изменения в семейном кодексе РФ от 22.09.2022</p>
-              <span class="news__slider-date">22.09.2022</span>
-            </a>
-            <a class="news__slider-link" href="#">
-              <img class="news__slider-img" src="img/news2.png" alt="image">
-              <p class="news__slider-text">Изменения в семейном кодексе РФ от 22.09.2022</p>
-              <span class="news__slider-date">22.09.2022</span>
-            </a>
-            <a class="news__slider-link" href="#">
-              <img class="news__slider-img" src="img/news3.png" alt="image">
-              <p class="news__slider-text">Изменения в семейном кодексе РФ от 22.09.2022</p>
-              <span class="news__slider-date">22.09.2022</span>
-            </a>
-            <a class="news__slider-link" href="#">
-              <img class="news__slider-img" src="img/news1.png" alt="image">
-              <p class="news__slider-text">Изменения в семейном кодексе РФ от 22.09.2022</p>
-              <span class="news__slider-date">22.09.2022</span>
-            </a>
-            <a class="news__slider-link" href="#">
-              <img class="news__slider-img" src="img/news2.png" alt="image">
-              <p class="news__slider-text">Изменения в семейном кодексе РФ от 22.09.2022</p>
-              <span class="news__slider-date">22.09.2022</span>
-            </a>
-            <a class="news__slider-link" href="#">
-              <img class="news__slider-img" src="img/news3.png" alt="image">
-              <p class="news__slider-text">Изменения в семейном кодексе РФ от 22.09.2022</p>
-              <span class="news__slider-date">22.09.2022</span>
-            </a>
-            <a class="news__slider-link" href="#">
-              <img class="news__slider-img" src="img/news1.png" alt="image">
-              <p class="news__slider-text">Изменения в семейном кодексе РФ от 22.09.2022</p>
-              <span class="news__slider-date">22.09.2022</span>
-            </a>
-            <a class="news__slider-link" href="#">
-              <img class="news__slider-img" src="img/news2.png" alt="image">
-              <p class="news__slider-text">Изменения в семейном кодексе РФ от 22.09.2022</p>
-              <span class="news__slider-date">22.09.2022</span>
-            </a>
-            <a class="news__slider-link" href="#">
-              <img class="news__slider-img" src="img/news3.png" alt="image">
-              <p class="news__slider-text">Изменения в семейном кодексе РФ от 22.09.2022</p>
-              <span class="news__slider-date">22.09.2022</span>
-            </a>
           </div>
 
         </div>
@@ -365,7 +295,7 @@
 
           <div class="contacts__inner">
 
-            <div class="contacts__block">
+            <div class="contacts__block"  id="contacts">
               <h3 class="contacts__title">
                 Получите консультацию <span>адвоката по телефону</span>
               </h3>
@@ -445,25 +375,25 @@
             <h4 class="footer__title">Навигация по сайту</h4>
             <ul class="footer__list">
               <li class="footer__item">
-                <a class="footer__link" href="#">Главная</a>
+                <a class="footer__link" href="index.html">Главная</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">О компании</a>
+                <a class="footer__link" href="#about">О компании</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Команда</a>
+                <a class="footer__link" href="#about">Команда</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Преимущества</a>
+                <a class="footer__link" href="#activity">Преимущества</a>
               </li>
               <li class="footer__item">
                 <a class="footer__link" href="#">Деятельность</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Новости</a>
+                <a class="footer__link" href="news.html">Новости</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Контакты</a>
+                <a class="footer__link" href="#contacts">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -561,10 +491,10 @@
               </li>
             </ul>
           </div>
-
         </div>
       </div>
     </footer>
+
   </div>
 
   
