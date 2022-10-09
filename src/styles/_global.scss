@@ -68,3 +68,25 @@ body{
     color: #938282;
   }
 }
+
+//burger
+.header__nav {
+	position: absolute;
+	right: 36px;
+	display: none;
+	z-index: 3;
+}
+.header__menu {
+
+position: relative;
+z-index: 2;
+}
+.header__menu li {
+list-style: none;
+margin: 0px 0px 0px 36px;
+color: #000;
+font-size: 16px;
+text-transform: uppercase;
+text-decoration: none;
+}
+//burger
