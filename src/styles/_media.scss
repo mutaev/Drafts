@@ -256,6 +256,18 @@
   }
 }
 
+@media (min-width: 560px) and (max-width: 805px){
+  .contacts__inner{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .contacts__block:first-child {
+    margin-right: 0;
+  }
+}
+
+
 @media (min-width: 560px) and (max-width: 860px) {
   .services__items{
     gap: 30px 5px;
